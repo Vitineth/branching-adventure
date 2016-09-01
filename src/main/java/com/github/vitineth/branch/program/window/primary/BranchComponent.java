@@ -162,20 +162,20 @@ public class BranchComponent extends JPanel implements MouseMotionListener, Mous
                 if (xs) {
                     g.setStroke(new BasicStroke(0.8f));
                     g.setColor(c.darker());
-                    g.drawLine(x, 0, x, getHeight());
+                    g.drawLine(x, 0, x, h);
                 } else {
                     g.setStroke(new BasicStroke(1f));
                     g.setColor(c.brighter());
-                    g.drawLine(x, 0, x, getHeight());
+                    g.drawLine(x, 0, x, h);
                 }
                 if (ys) {
                     g.setStroke(new BasicStroke(0.8f));
                     g.setColor(c.darker());
-                    g.drawLine(0, y, getWidth(), y);
+                    g.drawLine(0, y, w, y);
                 } else {
                     g.setStroke(new BasicStroke(1f));
                     g.setColor(c.brighter());
-                    g.drawLine(0, y, getWidth(), y);
+                    g.drawLine(0, y, w, y);
                 }
                 ys = !ys;
             }
